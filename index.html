@@ -15,63 +15,73 @@
 
   <body>
 	  
-	  <header class="group" id="header">
+	  <header class="group">
 		  <section class="header-wrap group">
 			  
 			  <section id="info">
-				  <h1>Hi, I'm Seth!</h1>
+				  <h1 id="seth">Hi, I'm Seth!</h1>
 				  <br>
-				  <h2 class="greeting">
+				  <h2 id="greeting">
 					  Nice to meet you! I'm a Brooklyn based Rails developer, and want to make cool things with you!
 				  </h2>
 			  </section>
+				
+			  <nav id="top-nav">
+				  <ul class="group">
+		      	<a href="#projects">Projects</a>
+
+	          <a href="#profile">About Me</a>
+
+	          <a href="#contact">Contact</a>
+
+	          <a href="https://github.com/Sethoscope1">Github</a>
+	          <span class="stretch"></span>
+				  </ul>
+			  </nav>
+				
 		  </section>
-		  
-		  <nav id="top-nav">
-			  <ul class="group">
-	      	<a href="#projects">Projects</a>
-
-          <a href="#profile">About Me</a>
-
-          <a href="#contact">Contact</a>
-
-          <a href="https://github.com/Sethoscope1">Github</a>
-          <span class="stretch"></span>
-			  </ul>
-		  </nav>
 	  </header>
+		
+		<section class="content">
 
-		<h2>Projects</h2>
+			<div class="titles circle"><h2>Projects</h2></div>
 
-		<section id="projects">
+			<section id="projects">
 
-      <section class="project x">
+
+				<!-- #### REG PROJECT STYLE #### -->
+	      <section class="project x">
         
-				<section class="project-images">
-          <img src="GardenApp.png" width="280px" height="auto" alt="GardenApp">
-        </section>
+					<section class="project-images">
+	          <img src="GardenApp.png" width="280px" height="auto" alt="GardenApp">
+	        </section>
 				
-        <section class="header group">
-          <h3 id="early-worm">Early Worm</h3>
-          <h4>Ruby on Rails, JQuery, Javascript, Paperclip photo upload, Addressable, search by distance and zip code</h4>
-        </section>
+	        <section class="header group">
+	          <h3 id="early-worm">Early Worm</h3>
+	          <h4>Ruby on Rails, JQuery, Javascript, Paperclip photo upload, Addressable, search by distance and zip code</h4>
+	        </section>
 				
 
 
-        <section class="info group">
-          <p class="project-copy"><em>Early Worm</em>is a list-making app/<em>'Trello'</em> clone for managing garden plantings and projects Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
+	        <section class="info group">
+	          <p class="project-copy"><em>Early Worm</em>is a list-making app/<em>'Trello'</em> clone for managing garden plantings and projects Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	        </section>
 
-        <section class="wrapper group">
-          <nav class="project-nav group">
-            <div><a class="nav-1"><em>github</em></a></div>
-            <div><a class="nav-2"><em>website</em></a></div>
-            <div><a class="nav-3"><em>images</em></a></div>
-          </nav>
-        </section>
-			</section>
-		</section> 
-		<!-- END PROJECTS -->
+	        <section class="wrapper group">
+	          <nav class="project-nav group">
+	            <div><a class="nav-1" href="#"><em>github</em></a></div>
+	            <div><a class="nav-2" href="#"><em>website</em></a></div>
+	            <div><a class="nav-3" href="#"><em>images</em></a></div>
+	          </nav>
+	        </section>
+				</section>
+			</section> 
+			
+		<!-- #### REG PROJECT STYLE #### -->	
+			<!-- END PROJECTS -->
+		</section>
+		<!-- END CONTENT -->
+
 
 
         <!-- <h3 id="asteroids">Asteroids</h3>
@@ -82,11 +92,10 @@
         <h4>Javascript, Ruby, Css</h4>
         <p></p> -->
 
-      <footer>
-        <p>Thanks for taking a look!</p>
-      </footer>
+    <footer>
+      <p>Thanks for taking a look!</p>
+    </footer>
 
-    </section>
   </body>
 
 </html>
@@ -118,7 +127,7 @@ $( document ).ready(function() {
           $('#header_nav').data('size','big');
           $('#header_nav').removeClass('mini')
           $('#header_nav').stop().animate({
-              height:'260px'
+              height:'200px'
           },600);
           // $('#hi h2').fadeOut("slow", "linear");
           // $('#hi i').fadeOut("slow", "linear");
@@ -126,7 +135,7 @@ $( document ).ready(function() {
     }
   });
   
-  var projects = document.querySelector('#projects');
+  var list = document.querySelector(',projects');
   var msnry = new Masonry( projects, {
 	  //options
 	  columnWidth: 400,

@@ -34,7 +34,73 @@ img {
 	clear: both;
 }
 
+header {
+	color: white;
+	background-color: #272640;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
 
+/*CIRCLES*/
+
+.circle {
+	width: 140px;
+	height: 140px;
+	border-radius: 70px;
+	-webkit-border-radius: 70px;
+	-moz-border-radius: 70px;
+	background: url("images/work.jpg");
+	position: relative;
+}
+
+.circle h2 {
+	color: white;
+	position: absolute;
+	
+	top: 50%;
+	height: 40px;
+	margin-top: -20px;
+	
+	left: 50%;
+	width: 100px;
+	margin-left: -50px;
+}
+
+#seth {
+	width: 800px;
+	text-align: center;
+	font-size: 48px;
+	margin: auto;
+}
+
+#info {
+	width: 100%;
+
+}
+
+#greeting {
+	width: 600px;
+	text-align: center;
+	margin: auto;
+}
+
+.header-wrap {
+	width: 900px;
+	margin: auto;
+}
+
+.top-nav {
+	margin: auto;
+}
+
+.content { 
+	padding-top: 200px;
+}
+
+.titles {
+	text-align: center;
+}
 .project-nav {
 	height: 20px;
 	text-align: justify;
@@ -66,11 +132,22 @@ em {
  
 body {
 /*  background-color: #fdf4ed;*/
-	font-family: helvetica, sans-serif;	
+	font-family: avenir, sans-serif;	
 }
 
 h2 {
 	font-size: 24px;
+}
+
+header h1 {
+	margin: auto;
+}
+
+#projects {
+	width: 900px;
+	margin: auto;
+	z-index: 0;
+	
 }
 
 .project {
