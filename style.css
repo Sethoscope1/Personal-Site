@@ -1,0 +1,127 @@
+/*ELEMENTS*/
+
+
+header, body, footer, section, div, ul, li, p, h1, h2, h3, h4, h5, h6, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+
+a {
+	text-decoration: none;
+	color: gray;
+	opacity: 0.7;
+}
+
+a:hover {
+	text-decoration: underline;
+	opacity: 1.0;
+}
+
+img {
+	width: 100%;
+}
+/*CLEAR FIX*/
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.project-nav {
+	height: 20px;
+	text-align: justify;
+	font-size: 0.1px;
+	width: 80%;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+.project-nav div {
+	width: 33%px;
+	height: 20px;
+	display: inline-block;
+
+}
+
+.project-nav:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+/*STYLES*/
+
+em {
+	font-style: italics;
+}
+ 
+ 
+body {
+/*  background-color: #fdf4ed;*/
+	font-family: helvetica, sans-serif;	
+}
+
+h2 {
+	font-size: 24px;
+}
+
+.project {
+	width: 25%;
+	background-color: white;
+	margin: 10px;
+}
+
+.project.x h3, .project.x a { 
+	color: #FF0343;
+}
+
+.project h3 {
+	font-size: 20px;
+	padding: 8px 0;
+}
+
+.project a {
+	font-size: 10px;
+	font-style: bold;
+/*	bold?*/
+}
+
+.project.x {
+	border-bottom: 1px solid #FF0343;
+}
+
+.project.x h3, .project.x a { 
+	color: #FF0343;
+}
+
+.project h3 {
+	text-transform: uppercase;
+/*	color: white;*/
+}
+
+.project h4, .project p {
+	color: gray;
+	opacity: 0.7;
+}
+
+.project p {
+	font-size: 11px;
+	padding: 10px 0;
+}
+
+
+.project.stretch {
+	background-color: blue;
+}
+.project a {
+/*	color: white;*/
+/*	opacity: 1.0;*/
+}
