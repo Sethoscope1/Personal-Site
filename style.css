@@ -14,7 +14,7 @@ header, body, footer, section, div, ul, li, p, h1, h2, h3, h4, h5, h6, img {
 
 a {
 	text-decoration: none;
-	color: gray;
+	color: white;
 	opacity: 0.7;
 }
 
@@ -34,27 +34,42 @@ img {
 	clear: both;
 }
 
-header {
+header, footer {
 	color: white;
 	background-color: #272640;
-	position: fixed;
 	width: 100%;
+}
+
+/*header {
+	position: fixed;
 	z-index: 1;
 }
-
+*/
 /*CIRCLES*/
-
+.titles {
+	margin: 20px 0;
+}
 .circle {
-	width: 140px;
-	height: 140px;
-	border-radius: 70px;
-	-webkit-border-radius: 70px;
-	-moz-border-radius: 70px;
-	background: url("images/work.jpg");
+	width: 160px;
+	height: 160px;
+	border-radius: 80px;
+	
+	background: url("images/work3.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	position: relative;
+	margin: auto;
+	
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+  -webkit-filter: sepia(90%) hue-rotate(130deg) brightness(80%);
+
+
 }
 
-.circle h2 {
+.titles h2 {
 	color: white;
 	position: absolute;
 	
@@ -65,6 +80,22 @@ header {
 	left: 50%;
 	width: 100px;
 	margin-left: -50px;
+}
+
+.words {
+	position: relative;
+	background: url("images/ship.jpg");
+	text-align: center;
+}
+
+.item.x .words h3 {
+	color: white;
+	font-size: 24px;
+	padding: 0;
+}
+
+.item.x h4 {
+	padding: 8px 0;
 }
 
 #seth {
@@ -90,18 +121,50 @@ header {
 	margin: auto;
 }
 
-.top-nav {
-	margin: auto;
+#banner {
+	height: 160px;
+	
+/*	position: absolute;*/
 }
 
+.fixed {
+	position: fixed;
+	top: 0px;
+	text-align: center;	
+}
+
+#nav-bar {
+	background-color: #272640;
+	width: 100%;
+		z-index: 9999;
+}
+
+#nav-bar.fixed #top-nav {
+
+}
+
+/*#nav-bar {
+	position: relative;
+	top: 100px;
+	width: 100%;
+	color: green;
+
+}
+
+#top-nav {
+	margin: auto;
+}*/
+
 .content { 
-	padding-top: 200px;
+	padding-top: 50px;
 }
 
 .titles {
 	text-align: center;
+	position: relative;
 }
-.project-nav {
+
+.project-nav, #top-nav {
 	height: 20px;
 	text-align: justify;
 	font-size: 0.1px;
@@ -110,14 +173,26 @@ header {
 	padding-bottom: 10px;
 }
 
-.project-nav div {
+#top-nav {
+	max-width: 870px;
+	
+
+}
+
+#top-nav a {
+	font-size: 16px;
+	display: block;
+	padding: 5px;
+}
+
+.project-nav div, #top-nav div {
 	width: 33%px;
 	height: 20px;
 	display: inline-block;
 
 }
 
-.project-nav:after {
+.project-nav:after, #top-nav:after {
 	content: "";
 	width: 100%;
 	display: inline-block;
@@ -133,7 +208,11 @@ em {
 body {
 /*  background-color: #fdf4ed;*/
 	font-family: avenir, sans-serif;	
+	position: relative;
+	top: 0;
 }
+
+
 
 h2 {
 	font-size: 24px;
@@ -143,62 +222,59 @@ header h1 {
 	margin: auto;
 }
 
-#projects {
+.list {
 	width: 900px;
 	margin: auto;
 	z-index: 0;
+	position: relative;
 	
 }
 
-.project {
-	width: 25%;
+.item {
+	width: 30%;
 	background-color: white;
-	margin: 10px;
+	margin: 20px 10px;
 }
 
-.project.x h3, .project.x a { 
-	color: #FF0343;
-}
-
-.project h3 {
+.item h3 {
 	font-size: 20px;
 	padding: 8px 0;
 }
 
-.project a {
+.item a {
 	font-size: 10px;
 	font-style: bold;
 /*	bold?*/
 }
 
-.project.x {
+.item.x {
 	border-bottom: 1px solid #FF0343;
 }
 
-.project.x h3, .project.x a { 
+.item.x h3, .item.x a { 
 	color: #FF0343;
 }
 
-.project h3 {
+.item h3 {
 	text-transform: uppercase;
 /*	color: white;*/
 }
 
-.project h4, .project p {
+.item h4, .item p {
 	color: gray;
 	opacity: 0.7;
 }
 
-.project p {
+.item p {
 	font-size: 11px;
 	padding: 10px 0;
 }
 
 
-.project.stretch {
+.item.stretch {
 	background-color: blue;
 }
-.project a {
+.item a {
 /*	color: white;*/
 /*	opacity: 1.0;*/
 }

@@ -16,55 +16,61 @@
   <body>
 	  
 	  <header class="group">
-		  <section class="header-wrap group">
+			
+		  <section id="banner" class="header-wrap group">
 			  
 			  <section id="info">
-				  <h1 id="seth">Hi, I'm Seth!</h1>
+			 	  <h1 id="seth">Hi, I'm Seth!</h1>
 				  <br>
 				  <h2 id="greeting">
 					  Nice to meet you! I'm a Brooklyn based Rails developer, and want to make cool things with you!
 				  </h2>
-			  </section>
+			  </section> 
 				
-			  <nav id="top-nav">
-				  <ul class="group">
-		      	<a href="#projects">Projects</a>
+		  </section> <!-- end header wrap -->
 
-	          <a href="#profile">About Me</a>
+		</header>
+					
+	  <section id="nav-bar" class="header-wrap group">
+			
+		  <nav class="group" id="top-nav">
+	      	<div><a href="#projects">Projects</a></div>
+          <div><a href="#profile">About Me</a></div>
+          <div><a href="#contact">Contact</a></div>
+          <div><a href="https://github.com/Sethoscope1">Github</a></div>
+		  </nav>
+			
+		</section> <!-- end nav bar  -->
+			
 
-	          <a href="#contact">Contact</a>
+						
 
-	          <a href="https://github.com/Sethoscope1">Github</a>
-	          <span class="stretch"></span>
-				  </ul>
-			  </nav>
-				
-		  </section>
-	  </header>
+	  
+
 		
 		<section class="content">
+			
+			<!-- START PROJECTS -->
 
-			<div class="titles circle"><h2>Projects</h2></div>
+			<div class="titles"><div class="circle"></div><h2>Projects</h2></div>
 
-			<section id="projects">
+			<section class="list group">
 
 
 				<!-- #### REG PROJECT STYLE #### -->
-	      <section class="project x">
-        
+				<section class="item x group">
+  
 					<section class="project-images">
 	          <img src="GardenApp.png" width="280px" height="auto" alt="GardenApp">
 	        </section>
-				
+	
 	        <section class="header group">
 	          <h3 id="early-worm">Early Worm</h3>
-	          <h4>Ruby on Rails, JQuery, Javascript, Paperclip photo upload, Addressable, search by distance and zip code</h4>
+	          <h4>Ruby on Rails, Javascript, JQuery</h4>
 	        </section>
-				
-
-
+	
 	        <section class="info group">
-	          <p class="project-copy"><em>Early Worm</em>is a list-making app/<em>'Trello'</em> clone for managing garden plantings and projects Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	          <p class="project-copy"><em>Early Worm</em> is a gardening themed list making & collaboration app/Trello clone. It features photo uploads with Paperclip & AWS storage, search by zip code and distance, drag-and-drop interface with Draggable, and asynchronous page updates (try flagging a note!)</p>
 	        </section>
 
 	        <section class="wrapper group">
@@ -74,11 +80,134 @@
 	            <div><a class="nav-3" href="#"><em>images</em></a></div>
 	          </nav>
 	        </section>
+					
 				</section>
-			</section> 
+				<!-- #### END REG PROJECT STYLE #### -->	
+				<section class="item x group">
+  
+					<section class="project-images">
+	          <img src="images/tictac.png" width="280px" height="auto" alt="GardenApp">
+	        </section>
+	
+	        <section class="header group">
+	          <h3 id="early-worm">TIC-TAC-TOE</h3>
+	          <h4>HTML, CSS, Javascript, JQuery (check this), Underscore.js</h4>
+	        </section>
+	
+	        <section class="info group">
+	          <p class="project-copy">Two player Tic-Tac-Toe built in Javascript, JQuery, HTML, and CSS.</p>
+	        </section>
+
+	        <section class="wrapper group">
+	          <nav class="project-nav group">
+	            <div><a class="nav-1" href="#"><em>github</em></a></div>
+	            <div><a class="nav-2" href="#"><em>website</em></a></div>
+	            <div><a class="nav-3" href="#"><em>images</em></a></div>
+	          </nav>
+	        </section>
+					
+				</section>
+				
 			
-		<!-- #### REG PROJECT STYLE #### -->	
-			<!-- END PROJECTS -->
+	
+				<!-- #### WORD PROJECT STYLE #### -->
+			  <section class="item x group">
+  
+					<div class="words"><h3>MATH</h3></div>
+	
+			    <section class="header group">
+			      <h4>Math Practice in Ruby, Javascript</h4>
+			    </section>
+	
+
+
+			    <section class="info group">
+			      <p class="project-copy">As someone coming from a liberal arts background, I like to try to keep up with things I might have missed - these are just some exercises where I try to keep track of things I learned.</p>
+			    </section>
+
+			    <section class="wrapper group">
+			      <nav class="project-nav group">
+			        <div><a class="nav-1" href="#"><em>github</em></a></div>
+			        <div><a class="nav-2" href="#"><em>website</em></a></div>
+			        <div><a class="nav-3" href="#"><em>images</em></a></div>
+			      </nav>
+			    </section>
+				</section>
+				<!-- #### END WORD PROJECT STYLE #### -->					
+			  
+				<!-- START EULER -->
+				
+				<section class="item x group">
+  
+					<section class="project-images">
+	          <img src="images/eulerflat.png" width="1000" height="auto" alt="Eulerflat">
+	        </section>
+	
+			    <section class="header group">
+			      <h4>Project Euler</h4>
+			    </section>
+	
+
+
+			    <section class="info group">
+			      <p class="project-copy">Here are some Project Euler problems I've been working on.</p>
+			    </section>
+
+			    <section class="wrapper group">
+			      <nav class="project-nav group">
+			        <div><a class="nav-1" href="#"><em></em></a></div>
+			        <div><a class="nav-2" href="#"><em>github</em></a></div>
+			        <div><a class="nav-3" href="#"><em></em></a></div>
+			      </nav>
+			    </section>
+				</section>
+				
+				<!-- END EULER -->
+				
+				<section class="item x group">
+  
+					<section class="project-images">
+	          <img src="images/minesweeper.png" width="280px" height="auto" alt="GardenApp">
+	        </section>
+	
+	        <section class="header group">
+	          <h3 id="early-worm">MINESWEEPER</h3>
+	          <h4>Ruby, Javascript</h4>
+	        </section>
+	
+	        <section class="info group">
+	          <p class="project-copy">Did you run Windows in the &#39;90s? Then you already know! Click on squares to see if there&#39;s a bomb underneath. Numbers show the count of adjacent bombs. Try to clear them out, but don&#39;t die.</p>
+	        </section>
+
+	        <section class="wrapper group">
+	          <nav class="project-nav group">
+	            <div><a class="nav-1" href="#"><em>github</em></a></div>
+	            <div><a class="nav-2" href="#"><em>website</em></a></div>
+	            <div><a class="nav-3" href="#"><em>images</em></a></div>
+	          </nav>
+	        </section>
+					
+				</section>	
+			
+			</section> <!-- END PROJECTS -->
+		
+		
+		<!-- START PROFILE -->
+		<!-- <section class="group">
+			<div class="titles circle"><h2>About</h2></div>
+		</section> -->
+		<!-- END PROFILE	 -->
+
+
+		<!-- START CONTACT -->
+		<!-- <section class="group">
+			<div class="titles circle"><h2>Contact</h2></div>
+		</section> -->
+		<!-- END PROFILE	 -->
+	
+	
+	
+			
 		</section>
 		<!-- END CONTENT -->
 
@@ -92,8 +221,8 @@
         <h4>Javascript, Ruby, Css</h4>
         <p></p> -->
 
-    <footer>
-      <p>Thanks for taking a look!</p>
+    <footer class="group">
+      <!-- <p>Thanks for taking a look!</p> -->
     </footer>
 
   </body>
@@ -103,44 +232,81 @@
 <script>
 $( document ).ready(function() {
 
-  $(function(){
-    $('#header_nav').data('size','big');
-  });
+	/////--- ENABLES NAV ANIMATIONS ---/////
+	var nav = $("#nav-bar");
+	var navClone = nav.clone().addClass("navClone");
+	var max_scroll = nav.position().top;
+	
+	nav.before(navClone);
+	$(".navClone").css({ "display": "none"})
+	
+	$(window).scroll(function() { 
+	
+		var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		// console.log(scrollTop);
+		// console.log(nav);
+		if(scrollTop > max_scroll && !nav.is(".fixed")) {
+			// nav.before(nav.clone().addClass(".clone"))
+			nav.addClass("fixed");
+			// console.log("floating");
+			$(".navClone").css({ "display": "block"})
+		}
+		else if(scrollTop < max_scroll && nav.is(".fixed")) {
+			// console.log("back to normal");
+			nav.removeClass("fixed");
+			$(".navClone").css({ "display": "none"})
+		}
+	
+	});
+
+	// $(window).scroll(function () {
+	//     if ($(window).scrollTop() > 0) {
+	//         $('#nav-bar').css('top', $(window).scrollTop());
+	//     }
+	// });
+	
+	
+  // $(function(){
+  //   $('#header_nav').data('size','big');
+  // });
 
 
-  $(window).scroll(function(){
-    if($(document).scrollTop() > 0)
-  {
-      if($('#header_nav').data('size') == 'big')
-      {
-          $('#header_nav').data('size','small');
-          $('#header_nav').addClass('mini');
-          $('#header_nav').stop().animate({
-              height:'50px'
-          },600);
-      }
-  }
-  else
-    {
-      if($('#header_nav').data('size') == 'small')
-        {
-          $('#header_nav').data('size','big');
-          $('#header_nav').removeClass('mini')
-          $('#header_nav').stop().animate({
-              height:'200px'
-          },600);
-          // $('#hi h2').fadeOut("slow", "linear");
-          // $('#hi i').fadeOut("slow", "linear");
-        }
-    }
-  });
+  // $(window).scroll(function(){
+  //   if($(document).scrollTop() > 0)
+  // {
+  //     if($('#header').data('size') == 'big')
+  //     {
+  //         $('#header').data('size','small');
+  //         $('#header').addClass('mini');
+  //         $('#header').stop().animate({
+  //             height:'50px'
+  //         },600);
+  //     }
+  // }
+  // else
+  //   {
+  //     if($('#header').data('size') == 'small')
+  //       {
+  //         $('#header').data('size','big');
+  //         $('#header').removeClass('mini')
+  //         $('#header').stop().animate({
+  //             height:'200px'
+  //         },600);
+  //         // $('#hi h2').fadeOut("slow", "linear");
+  //         // $('#hi i').fadeOut("slow", "linear");
+  //       }
+  //   }
+  // });
+	
+	/////--- ENABLES MASONRY TILES ---/////
   
-  var list = document.querySelector(',projects');
-  var msnry = new Masonry( projects, {
+  var list = document.querySelector('.list');
+  var msnry = new Masonry( list, {
 	  //options
-	  columnWidth: 400,
-	  itemSelector: '.project'
+	  columnWidth: 300,
+	  itemSelector: '.item'
   });
+	
 
 });
 
