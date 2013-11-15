@@ -1,0 +1,280 @@
+/*ELEMENTS*/
+
+
+header, body, footer, section, div, ul, li, p, h1, h2, h3, h4, h5, h6, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+
+a {
+	text-decoration: none;
+	color: white;
+	opacity: 0.7;
+}
+
+a:hover {
+	text-decoration: underline;
+	opacity: 1.0;
+}
+
+img {
+	width: 100%;
+}
+/*CLEAR FIX*/
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+header, footer {
+	color: white;
+	background-color: #272640;
+	width: 100%;
+}
+
+/*header {
+	position: fixed;
+	z-index: 1;
+}
+*/
+/*CIRCLES*/
+.titles {
+	margin: 20px 0;
+}
+.circle {
+	width: 160px;
+	height: 160px;
+	border-radius: 80px;
+	
+	background: url("../images/work3.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	position: relative;
+	margin: auto;
+	
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+  -webkit-filter: sepia(90%) hue-rotate(130deg) brightness(80%);
+
+
+}
+
+.titles h2 {
+	color: white;
+	position: absolute;
+	
+	top: 50%;
+	height: 40px;
+	margin-top: -20px;
+	
+	left: 50%;
+	width: 100px;
+	margin-left: -50px;
+}
+
+.words {
+	position: relative;
+	background: url("../images/ship.jpg");
+	text-align: center;
+}
+
+.item.x .words h3 {
+	color: white;
+	font-size: 24px;
+	padding: 0;
+}
+
+.item.x h4 {
+	padding: 8px 0;
+}
+
+#seth {
+	width: 800px;
+	text-align: center;
+	font-size: 48px;
+	margin: auto;
+}
+
+#info {
+	width: 100%;
+
+}
+
+#greeting {
+	width: 600px;
+	text-align: center;
+	margin: auto;
+}
+
+.header-wrap {
+	width: 900px;
+	margin: auto;
+}
+
+#banner {
+	height: 160px;
+	
+/*	position: absolute;*/
+}
+
+.fixed {
+	position: fixed;
+	top: 0px;
+	text-align: center;	
+}
+
+#nav-bar {
+	background-color: #272640;
+	width: 100%;
+		z-index: 9999;
+}
+
+#nav-bar.fixed #top-nav {
+
+}
+
+/*#nav-bar {
+	position: relative;
+	top: 100px;
+	width: 100%;
+	color: green;
+
+}
+
+#top-nav {
+	margin: auto;
+}*/
+
+.content { 
+	padding-top: 50px;
+}
+
+.titles {
+	text-align: center;
+	position: relative;
+}
+
+.project-nav, #top-nav {
+	height: 20px;
+	text-align: justify;
+	font-size: 0.1px;
+	width: 80%;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+#top-nav {
+	max-width: 870px;
+	
+
+}
+
+#top-nav a {
+	font-size: 16px;
+	display: block;
+	padding: 5px;
+}
+
+.project-nav div, #top-nav div {
+	width: 33%px;
+	height: 20px;
+	display: inline-block;
+
+}
+
+.project-nav:after, #top-nav:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+/*STYLES*/
+
+em {
+	font-style: italics;
+}
+ 
+ 
+body {
+/*  background-color: #fdf4ed;*/
+	font-family: avenir, sans-serif;	
+	position: relative;
+	top: 0;
+}
+
+
+
+h2 {
+	font-size: 24px;
+}
+
+header h1 {
+	margin: auto;
+}
+
+.list {
+	width: 900px;
+	margin: auto;
+	z-index: 0;
+	position: relative;
+	
+}
+
+.item {
+	width: 30%;
+	background-color: white;
+	margin: 20px 10px;
+}
+
+.item h3 {
+	font-size: 20px;
+	padding: 8px 0;
+}
+
+.item a {
+	font-size: 10px;
+	font-style: bold;
+/*	bold?*/
+}
+
+.item.x {
+	border-bottom: 1px solid #FF0343;
+}
+
+.item.x h3, .item.x a { 
+	color: #FF0343;
+}
+
+.item h3 {
+	text-transform: uppercase;
+/*	color: white;*/
+}
+
+.item h4, .item p {
+	color: gray;
+	opacity: 0.7;
+}
+
+.item p {
+	font-size: 11px;
+	padding: 10px 0;
+}
+
+
+.item.stretch {
+	background-color: blue;
+}
+.item a {
+/*	color: white;*/
+/*	opacity: 1.0;*/
+}
